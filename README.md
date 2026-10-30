@@ -153,6 +153,3 @@ src/ilredistrict fetch.py, build.py, model.py, optimize.py, metrics.py, report.p
 tests/           determinism, legality, score and seat-target tests
 results/         REPORT.md, enacted/, hjrca41/, weaver/
 ```
-
-How it was made: the code was written with an AI coding assistant at Jonny Wallace's direction,
-then run as ordinary Python. The AI is not part of the program.
