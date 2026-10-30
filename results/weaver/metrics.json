@@ -1,0 +1,92 @@
+{
+  "data_sha256": {
+    "census_pl": "e73f82d6aea0b9b372e9f8572c6edbedfa72ae9fc2039da84faf0cdf0c478a32",
+    "dra_elections": "8f74dce68831f4b0a77d95dea511e3fdf2b41a5f5f7a3d7ebf453ae119a031ea",
+    "enacted_sldl_bef": "531f7843f9d34d744f989ead86d7589f96ea8fa672f416a895f5a7283f5de36f",
+    "enacted_sldl_shapes": "577fc460286c4c2351922523aca64ef1051c1c3ba55527a55175fd21977b0ff7",
+    "openelections_2014": "0eab95126a9254964519c46199786eec3204068273aa86716b8301760c4cdc8d",
+    "tiger_vtd": "adbdd52c7e295139027ae87ed6465675dc73875e657f256dedc4d0f6e48419fe"
+  },
+  "mode": "weaver",
+  "params": {
+    "plan": {
+      "chamber": "Illinois House of Representatives",
+      "districts": 118,
+      "population_tolerance": 0.005,
+      "seed": 20261030,
+      "senate_districts": 59
+    },
+    "score": {
+      "county_split_weight": 10.0,
+      "county_surcharge": 1.0,
+      "municipality_split_weight": 10.0,
+      "municipality_surcharge": 0.5,
+      "township_split_weight": 5.0
+    },
+    "search": {
+      "recom_share": 0.35,
+      "recom_tries": 30,
+      "steps": 1000000,
+      "temperature_end": 0.05,
+      "temperature_start": 40.0
+    },
+    "weaver": {
+      "partisan_weight": 200.0,
+      "share_d_leaning": 0.38,
+      "share_r_leaning": 0.3,
+      "share_tossup": 0.32,
+      "tossup_margin": 5.0
+    }
+  },
+  "program_version": "0.1.0",
+  "python": "3.13.5",
+  "score_parts": {
+    "border_km": 6686.020261162452,
+    "partisan_penalty": 0.0,
+    "split_penalty": 3885.0
+  },
+  "search": {
+    "final_score": 10571.02,
+    "flip_accepted": 7333,
+    "flip_tried": 649633,
+    "recom_accepted": 53976,
+    "recom_tried": 350367,
+    "seconds": 1022.1,
+    "total_seconds": 1022.9
+  },
+  "seed": 20261030,
+  "summary": {
+    "county_extra_pieces": 125,
+    "county_units": 102,
+    "county_units_split": 39,
+    "districts": 118,
+    "interior_border_km": 6686.0,
+    "municipality_extra_pieces": 203,
+    "municipality_units": 1298,
+    "municipality_units_split": 142,
+    "polsby_popper_mean": 0.434,
+    "polsby_popper_min": 0.1356,
+    "population_max_over_pct": 0.483,
+    "population_max_under_pct": -0.492,
+    "population_range_pct": 0.975,
+    "seats_D": 45,
+    "seats_R": 35,
+    "seats_toss-up": 38,
+    "seats_won_D_gov2014": 37,
+    "seats_won_D_gov2018": 83,
+    "seats_won_D_gov2022": 82,
+    "senate_nesting": "59 Senate districts, each two touching House districts",
+    "tossup_margin_pts": 5.0,
+    "township_extra_pieces": 121,
+    "township_units": 1427,
+    "township_units_split": 86,
+    "vra_screen_black_majority_vap": 9,
+    "vra_screen_hispanic_majority_vap": 6,
+    "vra_screen_minority_majority_vap": 28
+  },
+  "weaver_target_seats": {
+    "D": 45,
+    "R": 35,
+    "toss-up": 38
+  }
+}
