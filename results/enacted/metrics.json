@@ -1,0 +1,31 @@
+{
+  "plan": "Enacted 2021 Illinois House map (Census 2022 SLDL)",
+  "summary": {
+    "county_extra_pieces": 219,
+    "county_units": 102,
+    "county_units_split": 62,
+    "districts": 118,
+    "interior_border_km": 8503.6,
+    "municipality_extra_pieces": 491,
+    "municipality_units": 1298,
+    "municipality_units_split": 301,
+    "polsby_popper_mean": 0.2632,
+    "polsby_popper_min": 0.0714,
+    "population_max_over_pct": 0.258,
+    "population_max_under_pct": -0.222,
+    "population_range_pct": 0.481,
+    "seats_D": 63,
+    "seats_R": 39,
+    "seats_toss-up": 16,
+    "seats_won_D_gov2014": 50,
+    "seats_won_D_gov2018": 81,
+    "seats_won_D_gov2022": 85,
+    "tossup_margin_pts": 5.0,
+    "township_extra_pieces": 380,
+    "township_units": 1427,
+    "township_units_split": 244,
+    "vra_screen_black_majority_vap": 9,
+    "vra_screen_hispanic_majority_vap": 11,
+    "vra_screen_minority_majority_vap": 37
+  }
+}
