@@ -144,36 +144,6 @@ Exact URLs and hashes: [`config/sources.toml`](config/sources.toml).
 * One seed and one run per mode. Other seeds give other, similar maps; a law should say which seed
   and how it is chosen (for example, drawn publicly from a lottery after the data is frozen).
 
-## What Weaver's proposal is missing
-
-1. **The Voting Rights Act needs more than a line item.** Section 2 can require districts where
-   minority voters can elect their candidates of choice. A program that ignores race (as HJRCA 41
-   asks) can dilute those districts; this one does, by the screen. A real law must say how VRA
-   districts are drawn first (by a court-reviewed process, with racial data) and then held fixed.
-2. **Racial data.** He lists VRA but not which data the program may use. Federal law forces some
-   use of race; HJRCA 41 bans "demographics" beyond what is required. The law must say what is
-   required.
-3. **Partisan targets conflict with the prior amendment.** Using past election results (point 1)
-   is exactly what HJRCA 41 prohibited. Which wins must be decided.
-4. **Which elections, and how counted.** "Last 3 Governor races" leaves open: precinct or county
-   level, two-party or total vote, how precincts that changed shape are handled, and what happens
-   when one race is a landslide.
-5. **Incumbency and communities of interest.** Silent. HJRCA 41 banned considering incumbents. A
-   law should say plainly whether incumbents' homes may be used and how communities of interest
-   (neighborhoods, tribes, school districts) are counted, if at all.
-6. **Constitutional or statutory.** The Illinois Constitution (Art. IV, Sec. 3) sets the current
-   process. A statute cannot replace it; this needs a constitutional amendment, like HJRCA 41.
-7. **Auditability.** The law should name the algorithm, the data vintage, the software version and
-   the random seed (Jonny's point), publish the code and inputs with checksums before the run, and
-   let anyone rerun it and get the same map. "Use AI" is not an algorithm; AI can help write the
-   program, but nothing should be decided by a model at run time.
-8. **Tie-breaking and priorities.** When goals conflict (fewer splits vs shorter borders vs
-   partisan target) the weights decide the map. They must be written into the law or a rule
-   adopted before the data is released.
-9. **Who runs it and public comment.** Who presses the button, deadlines, a public comment period
-   on the code and on the output, and what happens if the output is challenged in court.
-10. **Population "within 1%".** 1% of what: total range or each district vs ideal? This program
-    uses a total range of at most 1%.
 
 ## Layout
 
