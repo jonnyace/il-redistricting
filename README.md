@@ -6,8 +6,7 @@ Senate (59) districts from public data. Same code + same data files + same seed
 
 It was written in response to State Rep. Travis Weaver's proposal
 ([post](https://x.com/RepTWeaver/status/2116188250444345643)) that Illinois maps be drawn by a
-program instead of by politicians, and to Jonny Wallace's follow up
-([post](https://x.com/jonnywallace/status/2116290600840650780)): AI can help write the
+program instead of by politicians. AI can help write the
 program, but the program itself must be open source, deterministic and reproducible, and a law
 should name the algorithm, the data vintage and the random seed, not "whose AI".
 
