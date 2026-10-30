@@ -10,8 +10,6 @@ program instead of by politicians. AI can help write the
 program, but the program itself must be open source, deterministic and reproducible, and a law
 should name the algorithm, the data vintage and the random seed, not "whose AI".
 
-**This is a demonstration, not legal advice and not a proposed official map.**
-Any real map needs review by voting rights lawyers, public hearings, and the process a law sets out.
 
 ## Results
 
