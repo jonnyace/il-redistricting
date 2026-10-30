@@ -1,0 +1,25 @@
+[project]
+name = "ilredistrict"
+version = "0.1.0"
+description = "Deterministic, seeded, open source Illinois House and Senate map drawer"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+  "geopandas>=1.0", "matplotlib>=3.8", "networkx>=3.2", "numpy>=2.0", "pandas>=2.2",
+  "pyogrio>=0.7", "pyproj>=3.6", "requests>=2.31", "scipy>=1.12", "shapely>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
