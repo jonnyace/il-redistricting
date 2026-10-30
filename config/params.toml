@@ -1,0 +1,37 @@
+# Every number that shapes the plan lives here. Change a value, re-run, and the
+# output changes in a fully reproducible way. Nothing else is tunable.
+
+[plan]
+chamber = "Illinois House of Representatives"
+districts = 118          # Ill. Const. art. IV sec. 1: 118 Representative districts
+senate_districts = 59    # each Senate district = 2 adjacent House districts
+seed = 20261030          # the random seed; same seed + same data = same map
+population_tolerance = 0.005   # each district within +/-0.5% of ideal, so max-min <= 1%
+
+[score]
+# Score = border length (km) + split penalties + partisan penalty (weaver mode only).
+# Lower is better. Weights are "km of district border one extra split is worth".
+county_split_weight = 10.0
+municipality_split_weight = 10.0
+township_split_weight = 5.0
+# Bias in the random tree draw that makes district lines prefer county and
+# municipal boundaries (gerrychain-style "region surcharge").
+county_surcharge = 1.0
+municipality_surcharge = 0.5
+
+[weaver]
+# Statewide balance of the last three Governor races (2014, 2018, 2022),
+# using two-party vote. A district is a "toss-up" if its average two-party
+# margin across those races is within +/- tossup_margin points.
+tossup_margin = 5.0
+share_r_leaning = 0.30   # Rep. Weaver's example
+share_tossup = 0.32
+share_d_leaning = 0.38
+partisan_weight = 200.0  # km of border per point of margin outside the target band
+
+[search]
+recom_tries = 30         # spanning trees tried per recombination move
+steps = 1000000          # annealing steps
+recom_share = 0.35       # share of steps that are recombination moves (rest are single-precinct flips)
+temperature_start = 40.0 # km
+temperature_end = 0.05   # km

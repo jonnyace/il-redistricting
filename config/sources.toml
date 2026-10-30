@@ -1,0 +1,48 @@
+# Every public input the program reads. URLs are pinned (commit SHAs for GitHub
+# data) and each file's SHA-256 is checked after download, so a changed upstream
+# file stops the build instead of silently changing the map.
+# sha256 = "" means "record on first fetch" (see `ilredistrict fetch --record`).
+
+[census_pl]
+desc = "US Census Bureau, 2020 Census Redistricting Data (P.L. 94-171), Illinois legacy-format summary file: block population (P1) and voting-age population by Hispanic origin and race (P4), plus the geographic header (county, county subdivision/township, place, VTD)."
+url = "https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/Illinois/il2020.pl.zip"
+file = "il2020.pl.zip"
+license = "Public domain (U.S. Government work)"
+sha256 = "e73f82d6aea0b9b372e9f8572c6edbedfa72ae9fc2039da84faf0cdf0c478a32"
+
+[tiger_vtd]
+desc = "US Census Bureau TIGER/Line 2020 PL Voting Tabulation Districts (VTDs) for Illinois: the building blocks of every district."
+url = "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/17_ILLINOIS/17/tl_2020_17_vtd20.zip"
+file = "tl_2020_17_vtd20.zip"
+license = "Public domain (U.S. Government work)"
+sha256 = "adbdd52c7e295139027ae87ed6465675dc73875e657f256dedc4d0f6e48419fe"
+
+[enacted_sldl_bef]
+desc = "US Census Bureau 2022 State Legislative District block equivalency files (the enacted 2021 Illinois House map, effective for the 2022 election). Used only for comparison."
+url = "https://www2.census.gov/programs-surveys/decennial/rdo/mapping-files/2023/2022-state-legislative-bef/sldl_2022.zip"
+file = "sldl_2022.zip"
+member = "17_IL_SLDL22.txt"
+license = "Public domain (U.S. Government work)"
+sha256 = "531f7843f9d34d744f989ead86d7589f96ea8fa672f416a895f5a7283f5de36f"
+
+[enacted_sldl_shapes]
+desc = "US Census Bureau TIGER/Line 2022 State Legislative Districts, lower chamber, Illinois (enacted House map geometry, for compactness comparison only)."
+url = "https://www2.census.gov/geo/tiger/TIGER2022/SLDL/tl_2022_17_sldl.zip"
+file = "tl_2022_17_sldl.zip"
+license = "Public domain (U.S. Government work)"
+sha256 = "577fc460286c4c2351922523aca64ef1051c1c3ba55527a55175fd21977b0ff7"
+
+[dra_elections]
+desc = "Dave's Redistricting (dra2020/vtd_data), Illinois 2020-VTD election data v07: 2018 and 2022 Governor results already aggregated to 2020 VTDs. Pinned to a commit."
+url = "https://raw.githubusercontent.com/dra2020/vtd_data/22cb7f7a653140d260aafebf4716a7bb13c1b935/2020_VTD/IL/Election_Data_IL.v07.zip"
+file = "Election_Data_IL.v07.zip"
+member = "election_data_IL.v07.csv"
+license = "CC BY-SA 4.0, Social Good Fund for Dave's Redistricting. May not be sold."
+sha256 = "8f74dce68831f4b0a77d95dea511e3fdf2b41a5f5f7a3d7ebf453ae119a031ea"
+
+[openelections_2014]
+desc = "OpenElections Illinois, 2014 general election county-level results (Governor: Quinn vs Rauner). 2014 is not available on 2020 VTDs, so the program estimates it (see README). Pinned to a commit."
+url = "https://raw.githubusercontent.com/openelections/openelections-data-il/1fa096f60367a0fe22dc380cc9799abd5228b89c/2014/20141104__il__general__county.csv"
+file = "20141104__il__general__county.csv"
+license = "OpenElections data, public election returns"
+sha256 = "0eab95126a9254964519c46199786eec3204068273aa86716b8301760c4cdc8d"
