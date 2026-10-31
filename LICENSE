@@ -1,7 +1,5 @@
 MIT License
 
-Copyright (c) 2026 Jonny Wallace
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -19,23 +17,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-------------------------------------------------------------------------------
-DATA NOTICE
-
-The MIT license above covers the code in this repository. The input data is
-not part of the code license. It is downloaded by `python -m ilredistrict fetch`
-from the original publishers, and each file keeps its own terms:
-
-* U.S. Census Bureau 2020 PL 94-171 redistricting data, TIGER/Line 2020 voting
-  districts and 2022 state legislative district files: U.S. government works,
-  public domain.
-* Dave's Redistricting (DRA) precinct election data (github.com/dra2020/vtd_data):
-  Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0). Election-derived
-  columns in results/ (vote totals and margins) are adaptations of that data
-  and are shared under CC BY-SA 4.0 with attribution to DRA.
-* OpenElections Illinois results (github.com/openelections/openelections-data-il):
-  see that project's terms; it publishes certified official results.
-
-Maps and tables in results/ that contain no election data are released under MIT
-along with the code.
